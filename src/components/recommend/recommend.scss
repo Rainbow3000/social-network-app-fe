@@ -1,0 +1,166 @@
+.right-recommend{
+    border-radius: 10px; 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding:20px;
+    color: #1E2A35;
+    margin-bottom: 20px;
+    .dob-upcomming{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .dob-icon{
+            width: 100px;
+            height:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFEECC;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+        .dob-info{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            span{
+                &:first-child{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .top.hidden{
+        display: none;
+    }
+    .top{
+        span{
+            font-weight: 500;
+            color: #377DFF;
+            cursor: pointer;
+        }
+        span{
+            &:first-child{
+                font-weight: 600;
+                color: #1E2A35;
+                cursor: default;
+            }
+        }
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 0.5px solid #4e5d786b;
+
+    }
+
+    .center{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        margin-top: 20px;    
+        .center-avatar{
+            width: max-content;
+            img{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%
+            }
+        }      
+        .user-wrapper{
+            display: flex;
+            flex-direction: column;                        
+            width: 100%;
+            .user-name{
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                span{
+                    &:first-child{
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .icon-list{
+                margin-top: 5px;
+                span{
+                    margin-right: 10px;
+                    &:last-child{
+                     
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .bottom{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        position: relative;
+        .eye-icon{
+            position: absolute;
+            right: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            bottom: 3px;
+        }
+        .dob-send-input{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            input{
+                height: 35px;
+                background-color: rgba(229, 229, 229, 0.6117647059);
+                border: none;
+                outline: none;
+                padding: 10px;
+                width: 100%;
+                border-radius: 5px;
+            }
+            .send-icon-wrapper{
+                height: 35px;
+                width: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                background-color: #E5F4FF;
+                color: #377dff;
+                margin-left: 10px;
+                border-radius: 5px;
+            }
+        }
+
+      
+        button{
+            width: 120px;
+            height: 40px;
+            border: none;
+            background-color: #377DFF;
+            border-radius: 10px;
+            cursor: pointer;
+            &:first-child{
+                background-color: transparent;
+                border: 0.5px solid #1E2A35;
+            }
+
+            &:last-child{
+                color: #FFFFFF;
+                
+            }
+        }
+    }
+}

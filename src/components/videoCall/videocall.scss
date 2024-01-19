@@ -1,0 +1,68 @@
+@import '../../responsive'; 
+.video-call-container{
+    position: absolute;
+    z-index: 999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1230px;
+    height: 850px;
+    border-radius: 5px;
+    box-shadow: -4px 3px 21px -1px rgba(166,147,147,0.73);
+    -webkit-box-shadow: -4px 3px 21px -1px rgba(166,147,147,0.73);
+    -moz-box-shadow: -4px 3px 21px -1px rgba(166,147,147,0.73);
+    background-color: #FFFFFF;
+    top: 50%;
+    transform: translate(-50%,-50%);;
+    left: 50%;
+    display: none;
+    @include lowPc{
+        width: 80vw;
+        height: 80vw;
+        align-items: flex-center;
+    }
+    .btn-action-list{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        .phone-end{
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 10px;
+            cursor:pointer;
+            background-color: red;
+            color: #FFFFFF;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+    }
+    .close-icon{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .my-video{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        border-radius: 5px;
+    }
+    .friend-video{
+        border-radius: 5px;
+        @include lowPc{
+            margin-top: 130px;
+        }
+    }
+}
+
+.video-call-container.active{
+    display: flex;
+}

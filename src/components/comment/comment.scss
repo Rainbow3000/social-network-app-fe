@@ -1,0 +1,18 @@
+.child-comment-num{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.comment-img{
+    width: 30%;
+    height: 120px;
+    padding-left: 10px;
+    margin-top: 5px;
+    img{
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 5px !important;
+    }
+}
+

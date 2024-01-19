@@ -1,0 +1,223 @@
+.auth-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FAFB;
+    color: #1E2A35;
+    overflow: hidden;
+    .main{
+        width: 1440px;
+        height: 930px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .title{
+            width: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 10px;
+            span{
+                &:first-child{
+                    font-weight: bold;
+                    font-size: 46px;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .form-container{
+            display: flex;
+            width: 480px;
+            height: auto;
+            overflow: hidden;
+            
+            .form-slice{
+                width: 960px;
+                display: flex;
+                height: auto;
+                align-items: flex-start;
+                transition: all 0.5s ease;
+            }
+
+            .form-slice.active{
+                transform: translateX(-480px);
+            }
+        }
+
+        .form-wrapper{
+            
+            color: #1E2A35;
+            width: 480px;
+            height: auto;
+            display: flex;
+            padding-bottom: 30px;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 10px;
+            .icon{
+                cursor: pointer;
+                font-size: 18px;
+            }
+            form{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: -1px -1px 9px 0px rgba(184,159,159,0.75);
+                -webkit-box-shadow: -1px -1px 9px 0px rgba(184,159,159,0.75);
+                -moz-box-shadow: -1px -1px 9px 0px rgba(184,159,159,0.75);
+                padding-bottom: 30px;
+                border-radius: 5px;
+                .input-item{
+                    width: 90%;
+                    min-height: 45px;
+                    height: auto;
+                    border-radius: 10px;
+                    margin-top: 40px;             
+                    align-items: center;
+                    position: relative;
+                    .error-text{
+                        font-size: 14px;
+                        color: red;
+                    }
+                    .input-main{
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 10px;
+                        margin-top: 5px;
+                        border: 0.5px solid #EEEEEE;
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+                        position: relative;
+                    }
+                    .input-date{
+                        position: absolute;
+                        background-color: #FFFFFF;
+                        border-radius: 10px;
+                        padding-left: 10px;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            font-size: 14px;
+                            color: #757575;
+                        }
+                    }
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        outline: none;
+                        border: none;
+                        padding-left: 10px;
+                    }
+                   
+
+                    input[type=radio]{
+                        width: 20px;
+                        margin-right: 5px;
+                    }
+                    .gender-label{
+                        margin-right: 15px;
+                        color: #757575;
+                        font-size: 14px;
+                    }
+                    .gender-icon{
+                        margin-right: 5px;
+                        font-weight: bold;
+                    }
+                    
+                }
+
+                .input-wrapper{
+                    width: 90%;
+                    display: flex;
+                    height: auto;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    .input-item{
+                        width: 45%;
+
+                    }
+
+                    .forget-pass{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        span:last-child{
+                        margin-left: 10px;
+                        font-weight: 500;
+                        color: #377DFF;
+                        cursor: pointer;
+                        }
+                    }
+                }
+
+                .form-btn{
+                    width: 90%;
+                    height: 45px;
+                    background-color: #377DFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 30px;
+                    border-radius: 10px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    border: none;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #377dffe5;
+                    }
+
+                }
+
+                .login-link{
+                    margin-top: 30px;
+                    span{
+                        &:last-child{
+                            color: #377DFF;
+                            cursor: pointer;
+                            font-weight: 500;
+                            &:hover{
+                                color: #377dffdc;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .button-list{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                button{
+                    width: 45%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+    }
+}
+
+

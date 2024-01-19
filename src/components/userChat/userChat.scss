@@ -1,0 +1,84 @@
+@import '../../responsive'; 
+
+.user-chat-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #F9FAFB;
+    border-radius: 10px;
+    color:#1E2A35 ;
+    text-wrap: wrap;
+    &:hover{
+        background-color: #EEEEEE;
+        cursor: pointer;
+    }
+    .left{
+        flex: 2;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        img{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .chat-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            font-weight: bold;
+            span{
+               @include lowPc{
+                width: max-content;
+               }
+                &:last-child{
+                    white-space: nowrap; 
+                    max-width: 250px; 
+                    overflow: hidden;
+                    text-overflow: ellipsis; 
+                    font-size: 14px;
+                    margin-top: 5px;
+                    font-weight: 500;
+                  
+                }
+            }
+        }
+    }
+    .right{
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 12px;     
+        .user-active{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: block;
+            background-color: rgb(29, 209, 29);
+        }
+        .mess-num{
+            span{
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-color: red;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                margin-top: 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

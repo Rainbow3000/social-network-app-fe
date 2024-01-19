@@ -1,0 +1,59 @@
+.profile-action-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .profile-action-title{
+        width: 90%;
+        text-align: left;
+        font-weight: bold;
+        color: #14B8B7;
+    }
+    .profile-action-input-item{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+        .preview-profile{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            img{
+                width: 55x;
+                height: 55px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        input{
+            width: 100%;
+            height: 35px;
+            outline: none;
+            border: 1px solid rgba(128, 128, 128, 0.384);
+            border-radius: 5px;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+    }
+    button{
+        width: 30%;
+        height: 35px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        float: right;
+        
+    }
+
+    .profile-action-btn-wrapper{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

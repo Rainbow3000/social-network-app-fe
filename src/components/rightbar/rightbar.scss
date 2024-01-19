@@ -1,0 +1,62 @@
+.right-container{
+    width: 90%;
+    height: calc(100vh - 69px);
+    position: sticky;
+    right: 0;
+    top: 69px;
+    overflow-y: auto;
+    padding: 0 20px;
+    background-color: #FFFFFF;
+    .search-input{
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(78, 93, 120, 0.266666666);
+        height: 45px;
+        padding: 20px;
+        border-radius: 10px;
+        .search-icon{
+            width: 30px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            color: #1E2A35;
+        }
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+        }
+    }
+
+    .right-title{
+        width: 100%;
+        margin-top: 20px;
+        color: #1E2A35;
+        span{
+            font-weight: bold;
+        }
+    }
+    /* width */
+}
+.right-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.right-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+.right-container::-webkit-scrollbar-thumb {
+    background: #8888884f; 
+}
+
+/* Handle on hover */
+.right-container::-webkit-scrollbar-thumb:hover {
+    background: #55555560; 
+}
+
